@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
-    
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>
     <link rel="icon" href="https://avatars.githubusercontent.com/u/198187758?s=400&u=9ceb4eb77f6d33d0afaad8531009ac88f1bdfb2d&v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -47,7 +47,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-
+<style>#postBody{font-size:20px}</style>
 
 
 
@@ -107,7 +107,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>3.<a href="https://mp.weixin.qq.com/s/7Kx0FxMdVE1-RPhVqJtl8w" rel="nofollow">也谈钱</a>。一份财富自由日志，除了投资，也可以看看作者读的书，分享的生活日常。</p>
 <p>4.<a href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzA5NjIwMDYxNQ==&amp;action=getalbum&amp;album_id=1683691622309347329#wechat_redirect" rel="nofollow">沙之书中的阿莱夫</a>。主要做读书分享，他的读书笔记值得学习。</p>
 <p>5.<a href="https://mp.weixin.qq.com/s/CFyvBZQPOpL_oKydB2w2ow" rel="nofollow">BuildForever</a>。作者根据个人品味，每周推荐上周觉得有意思的七样东西。</p></div>
-<div style="font-size:small;margin-top:8px;float:right;"></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
@@ -122,8 +122,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("02/08/2025"!=""){
+    var startSite=new Date("02/08/2025");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -207,6 +207,6 @@ function iFrameLoading(){
 
 
 </script>
-
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
 
 </html>
